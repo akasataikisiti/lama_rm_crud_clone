@@ -3,6 +3,8 @@ import Register from "./pages/register/Register";
 import Navbar from "./components/navBar/Navbar";
 import LeftBar from "./components/leftBar/LeftBar";
 import RightBar from "./components/rightBar/RightBar";
+import Home from "./pages/home/Home";
+import Profile from "./pages/profile/Profile";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,6 +27,20 @@ function App() {
   };
 
   const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/profile/:id",
+          element: <Profile />,
+        },
+      ],
+    },
     {
       path: "/login",
       element: <Login />,

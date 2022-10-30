@@ -3,7 +3,7 @@ import React, {useState} from "react"
 function LeftBar(){
   return(
     <div>
-      <p>Body</p>
+      <p>leftbar</p>
     </div>
     )
 }

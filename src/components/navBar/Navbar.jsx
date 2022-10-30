@@ -3,7 +3,7 @@ import React, {useState} from "react"
 function Navbar(){
   return(
     <div>
-      <p>Body</p>
+      <p>Navbar</p>
     </div>
     )
 }
