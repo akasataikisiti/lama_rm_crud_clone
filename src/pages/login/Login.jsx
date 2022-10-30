@@ -1,17 +1,20 @@
-import "./login.scss"
+import { Link } from "react-router-dom";
+import "./login.scss";
 
-function Login(){
-  return(
+function Login() {
+  return (
     <div className="login">
       <div className="card">
         <div className="left">
           <h1>Hello World.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. LIbero cum, alias totam numquam
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. LIbero cum,
+            alias totam numquam
           </p>
-            <span>Don't you have an account?</span>
-          <button>Register</button>
+          <span>Don't you have an account?</span>
+          <Link to="/register">
+            <button>Register</button>
+          </Link>
         </div>
         <div className="right">
           <h1>Login</h1>
@@ -23,7 +26,7 @@ function Login(){
         </div>
       </div>
     </div>
-    )
+  );
 }
 
-export default Login
+export default Login;
