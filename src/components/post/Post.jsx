@@ -35,6 +35,15 @@ function Post({ post }) {
         <div className="info">
           <div className="item">
             {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+            12 Likes
+          </div>
+          <div className="item">
+            <TextsmsOutlinedIcon />
+            12 Comments
+          </div>
+          <div className="item">
+            <ShareOutlinedIcon />
+            Share
           </div>
         </div>
       </div>
