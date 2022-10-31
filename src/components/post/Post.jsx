@@ -7,6 +7,9 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Link } from "react-router-dom";
 
 function Post({ post }) {
+  //TEMPORARY
+  const liked = false;
+
   return (
     <div className="post">
       <div className="container">
@@ -29,7 +32,11 @@ function Post({ post }) {
           <p>{post.desc}</p>
           <img src={post.img} alt="" />
         </div>
-        <div className="info"></div>
+        <div className="info">
+          <div className="item">
+            {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+          </div>
+        </div>
       </div>
     </div>
   );
