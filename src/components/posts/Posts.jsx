@@ -1,4 +1,5 @@
 import "./posts.scss";
+import Post from "../post/Post";
 
 function Posts() {
   //TEMPORARY
@@ -25,9 +26,7 @@ function Posts() {
   return (
     <div className="posts">
       {posts.map((post) => (
-        <div className="post">
-           
-        </div>
+      <Post post={post} key={post.id}/>
       ))}
     </div>
   );
