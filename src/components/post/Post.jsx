@@ -9,23 +9,25 @@ import { Link } from "react-router-dom";
 function Post({ post }) {
   return (
     <div className="post">
-      <div className="user">
-        <div className="userInfo">
-          <img src={post.img} alt="" />
-          <div className="details">
-            <Link
-              to={`/profile/${post.user}`}
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <span>{post.name}</span>
+      <div className="container">
+        <div className="user">
+          <div className="userInfo">
+            <img src={post.img} alt="" />
+            <div className="details">
+              <Link
+                to={`/profile/${post.user}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <span className="name">{post.name}</span>
+              </Link>
               <span className="date">1 min ago</span>
-            </Link>
+            </div>
           </div>
+          <MoreHorizIcon />
         </div>
-        <MoreHorizIcon />
+        <div className="content"></div>
+        <div className="info"></div>
       </div>
-      <div className="content"></div>
-      <div className="info"></div>
     </div>
   );
 }
