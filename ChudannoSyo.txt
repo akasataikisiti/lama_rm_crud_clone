@@ -1,3 +1,4 @@
 https://www.youtube.com/watch?v=FweHcYHkt9A
-41:13から
-githubからイメージファイルを持って来るところから始める
+
+ライトバーの記述が終わった。
+1:01:11から
