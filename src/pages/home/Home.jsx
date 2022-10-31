@@ -1,29 +1,14 @@
-import React, {useState} from "react"
+import Stories from "../../components/stories/Stories.jsx";
+import Posts from "../../components/posts/Posts.jsx";
 import "./home.scss";
 
-function Home(){
-  return(
+function Home() {
+  return (
     <div className="home">
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
+      <Stories />
+      <Posts />
     </div>
-    )
+  );
 }
 
-export default Home
+export default Home;
