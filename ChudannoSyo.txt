@@ -1,4 +1,4 @@
 https://www.youtube.com/watch?v=FweHcYHkt9A
 
-ライトバーの記述が終わった。
-1:01:11から
+コメントコンポーネント作成したところから
+1:46:49
