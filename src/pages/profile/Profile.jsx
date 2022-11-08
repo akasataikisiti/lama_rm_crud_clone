@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import "./profile.scss";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -20,7 +20,7 @@ function Profile() {
           alt=""
         />
         <img
-          className="profile"
+          className="profilePic"
           src="https://images.pexels.com/photos/14028501/pexels-photo-14028501.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
           alt=""
         />
@@ -49,16 +49,21 @@ function Profile() {
             <div className="info">
               <div className="item">
                 <PlaceIcon />
+                <span>USA</span>
+              </div>
+              <div className="item">
                 <LanguageIcon />
                 <span>lama.dev</span>
               </div>
-              <button>follow</button>
             </div>
+            <button>follow</button>
           </div>
           <div className="right">
             <EmailOutlinedIcon />
+            <MoreVertIcon />
           </div>
         </div>
+        <Posts />
       </div>
     </div>
   );
